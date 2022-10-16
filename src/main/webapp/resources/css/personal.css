@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.containers{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    background-color: rgba(255,182,193,0.3);
+}
+
+.mainn{
+    min-height:30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #aaaaaa;
+}
+.toutu{
+    border-radius: 50%;
+    width: 150px;
+    margin: 20px;
+}
+.neiwen{
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.neiwen{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.detail{
+    font-size: 15px;
+    color: gray;
+}
+.juti {
+    min-width: 180px;
+    position: relative;
+    top: 20px;
+}
+
+.juti ul {
+    list-style: none;
+}
+.juti li a {
+    display: block;
+    color: #FF69B4;
+    padding: 10px 100px;
+    text-decoration: none;
+    margin: 20px 0px;
+
+}
+/*.t1 a:before{*/
+/*    content:"";*/
+/*    position: absolute;*/
+/*    width: 300px;*/
+/*    height: 1px;*/
+/*    left: 20%;*/
+/*    bottom: 0;*/
+/*    background-color: #aaaaaa;;*/
+/*}*/
+
+.juti span {
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.juti i {
+    padding-right: 15px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.juti a:hover {
+    background:#FFB6C1;
+    color: white;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*顶端条*/
+.topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(255,182,193,0.7);;
+    position: fixed;
+    z-index: 10;
+    height: 80px;
+    width: 100%;
+    bottom: 30px;
+    margin: 0 20px;
+}
+
+/*导航*/
+.navi {
+    position: relative;
+    height: 80px;
+}
+
+.nav-title a {
+    font-size: 20px;
+    line-height: 80px;
+    display: block;
+    color: white;
+    padding: 0 10px ;
+    text-decoration: none;
+    transition: all 0.5s;
+    /*border: 1px black solid;*/
+}
+.navi:hover .nav-title a {
+    color: #FF69B4;
+    background-color: white;
+}
+.navi:hover .nav-title a i{
+    color: #FF69B4;
+    transition: all 0.5s;
+}
+
+/*导航底下的列表*/
+.meiyi{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px black solid;*/
+    align-items: center;
+}
+.meiyi i{
+    position: absolute;
+    top:-40px;
+    font-size: 40px;
+    vertical-align: middle;
+    color: white;
+    /*border: 1px black solid;*/
+}
+
+.meiyi span
+{
+    /*border: 1px black solid;*/
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 2403353 */
+    src: url('//at.alicdn.com/t/font_2403353_p7u47jdwxg.eot');
+    src: url('//at.alicdn.com/t/font_2403353_p7u47jdwxg.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_2403353_p7u47jdwxg.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_2403353_p7u47jdwxg.woff') format('woff'),
+    url('//at.alicdn.com/t/font_2403353_p7u47jdwxg.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_2403353_p7u47jdwxg.svg#iconfont') format('svg');
+}
+@media (max-width: 991px) {
+    .containers .info, .login-page .form {
+        min-height: auto !important;
+    }
+
+    .containers .info {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+    }
+}

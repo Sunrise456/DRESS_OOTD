@@ -1,0 +1,50 @@
+.sahngding{
+    background: rgba(255,182,193,0.7);
+    margin: 0 20px;
+    padding: 10px;
+}
+.shangwen{
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+.neirong{
+    display: flex;
+    flex-direction: row;
+}
+aside {
+    margin: 0 20px;
+    width: 120px;
+    background-color: white;
+    /*border: 1px black solid;*/
+}
+ul{
+    list-style: none;
+}
+.sidebar > h5 {
+    padding: 5px 5px;
+    color: white;
+    background-color: rgba(255,182,193,0.7);
+}
+
+.sidebar > h5:hover {
+    background-color: black;
+    /*小手*/
+    cursor: pointer;
+}
+
+.sidebar ul {
+    display: none;
+}
+
+.sidebar li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 5px;
+}
+
+.sidebar li a:hover {
+    background-color: rgba(255,182,193,1);
+    color: white;
+}
